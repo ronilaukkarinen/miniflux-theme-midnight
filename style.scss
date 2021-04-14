@@ -8,6 +8,7 @@
   --color-white: #fff;
   --width-body: 900px;
   --item-title-link-line-height: 1.23;
+  --entry-content-line-height: 1.5;
   --item-title-link-font-size: 28px;
   --font-size-smaller: 16px;
   --font-size-meta: var(--font-size-smaller);
@@ -59,8 +60,8 @@
   --input-focus-border-color: rgba(82, 168, 236, .8);
   --input-focus-box-shadow: 0 0 8px rgba(82, 168, 236, .6);
   --alert-color: #efefef;
-  --alert-background-color: #333;
-  --alert-border-color: #888;
+  --alert-background-color: #111;
+  --alert-border-color: transparent;
   --alert-success-color: #efefef;
   --alert-success-background-color: #333;
   --alert-success-border-color: #888;
@@ -95,8 +96,8 @@
   --entry-header-title-link-color: var(--color-white);
   --entry-content-color: var(--color-white);
   --entry-content-code-color: var(--color-white);
-  --entry-content-code-background: #555;
-  --entry-content-code-border-color: #888;
+  --entry-content-code-background: #000;
+  --entry-content-code-border-color: transparent;
   --entry-content-quote-color: #777;
   --entry-content-abbr-border-color: #777;
   --entry-enclosure-border-color: #333;
@@ -150,6 +151,10 @@ body {
 // Listing header
 .page-header {
   padding-left: var(--item-padding);
+
+  // "No unread articles
+  + p.alert {
+  }
 
   > ul {
     list-style: none;
@@ -306,6 +311,14 @@ body .item {
 }
 
 // Single article
+.entry {
+  padding: var(--item-padding);
+}
+
+.entry-content {
+  line-height: var(--entry-content-line-height);
+}
+
 body .entry-header h1 {
   margin: 80px 0 20px;
 }
@@ -433,4 +446,19 @@ body .pagination-bottom {
 .page-header li,
 .page-footer li {
   list-style: none;
+}
+
+// Code
+.entry-content pre,
+.entry-content code {
+  border-radius: 6px;
+}
+
+.entry-content pre code {
+  font-size: var(--font-size-smaller);
+}
+
+.entry-content pre {
+  line-height: 1.33;
+  padding: 15px;
 }
