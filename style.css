@@ -132,6 +132,15 @@ body {
 
 .page-header {
   padding-left: var(--item-padding); }
+  .page-header + p.alert {
+    background-image: url("https://raw.githubusercontent.com/ronilaukkarinen/miniflux-theme-midnight/master/done.svg");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: 400px auto;
+    border-radius: 4px;
+    height: 400px;
+    overflow: auto;
+    text-align: center; }
   .page-header > ul {
     list-style: none;
     margin-left: 0;
