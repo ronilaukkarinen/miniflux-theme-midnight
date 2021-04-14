@@ -1,0 +1,19 @@
+{
+  "name": "miniflux-theme-midnight",
+  "version": "1.0.0",
+  "description": "Midnight theme for Miniflux",
+  "author": "Roni Laukkarinen (Twitter: @rolle, GitHub: ronilaukkarinen)",
+  "devDependencies": {
+    "scss": "^0.2.4"
+  },
+  "dependencies": {
+    "stylelint": "^13.12.0",
+    "stylelint-a11y": "^1.2.3",
+    "stylelint-config-recommended-scss": "^4.2.0",
+    "stylelint-config-standard": "^21.0.0",
+    "stylelint-declaration-use-variable": "^1.7.2",
+    "stylelint-order": "^4.1.0",
+    "stylelint-scss": "^3.19.0",
+    "stylelint-value-no-unknown-custom-properties": "^3.0.0"
+  }
+}
