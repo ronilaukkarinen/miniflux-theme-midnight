@@ -51,7 +51,7 @@
   --input-focus-border-color: rgba(82, 168, 236, .8);
   --input-focus-box-shadow: 0 0 8px rgba(82, 168, 236, .6);
   --alert-color: #efefef;
-  --alert-background-color: #111;
+  --alert-background-color: transparent;
   --alert-border-color: transparent;
   --alert-success-color: #efefef;
   --alert-success-background-color: #333;
@@ -132,6 +132,8 @@ body {
 
 .page-header {
   padding-left: var(--item-padding); }
+  .page-header > h1 {
+    padding-bottom: 10px; }
   .page-header + p.alert,
   .page-header + p.alert.alert-info {
     background-image: url("https://www.rollemaa.fi/done.svg");
@@ -142,6 +144,11 @@ body {
     height: 400px;
     overflow: auto;
     text-align: center; }
+    @media (max-width: 600px) {
+      .page-header + p.alert,
+      .page-header + p.alert.alert-info {
+        background-size: 230px auto;
+        height: 250px; } }
   .page-header > ul {
     list-style: none;
     margin-left: 0;
