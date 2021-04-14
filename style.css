@@ -60,8 +60,8 @@
   --alert-error-background-color: #333;
   --alert-error-border-color: #888;
   --alert-info-color: #efefef;
-  --alert-info-background-color: #333;
-  --alert-info-border-color: #888;
+  --alert-info-background-color: transparent;
+  --alert-info-border-color: transparent;
   --panel-background: #333;
   --panel-border-color: #555;
   --panel-color: #9b9b9b;
@@ -132,8 +132,9 @@ body {
 
 .page-header {
   padding-left: var(--item-padding); }
-  .page-header + p.alert {
-    background-image: url("https://raw.githubusercontent.com/ronilaukkarinen/miniflux-theme-midnight/master/done.svg");
+  .page-header + p.alert,
+  .page-header + p.alert.alert-info {
+    background-image: url("https://www.rollemaa.fi/done.svg");
     background-position: center bottom;
     background-repeat: no-repeat;
     background-size: 400px auto;
