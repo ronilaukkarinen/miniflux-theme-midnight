@@ -322,4 +322,8 @@ body .pagination-bottom {
   .page-footer a:focus {
     opacity: 1; }
 
+.page-header li,
+.page-footer li {
+  list-style: none; }
+
 /*# sourceMappingURL=style.css.map */
