@@ -114,11 +114,16 @@
   margin-left: var(--item-padding);
   position: relative;
 
+  @media (max-width: 600px) {
+    margin-bottom: 40px;
+  }
+
   a,
   a span {
     color: var(--color-white);
     font-family: 'Merriweather', serif;
     font-weight: 900;
+    letter-spacing: 0;
     transition: all .5s cubic-bezier(.19, 1, .22, 1), background-color .2s cubic-bezier(.19, 1, .22, 1);
   }
 

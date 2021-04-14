@@ -105,11 +105,15 @@
   font-weight: 900;
   margin-left: var(--item-padding);
   position: relative; }
+  @media (max-width: 600px) {
+    .logo {
+      margin-bottom: 40px; } }
   .logo a,
   .logo a span {
     color: var(--color-white);
     font-family: 'Merriweather', serif;
     font-weight: 900;
+    letter-spacing: 0;
     transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1), background-color 0.2s cubic-bezier(0.19, 1, 0.22, 1); }
   .logo a:hover,
   .logo a:hover span,
