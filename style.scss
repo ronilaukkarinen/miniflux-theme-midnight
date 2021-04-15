@@ -458,7 +458,8 @@ body .pagination-bottom {
 .page-footer {
   margin-bottom: 30px;
   margin-top: 30px;
-  padding: var(--item-padding);
+  padding-left: 0;
+  padding-right: 0;
 
   a {
     font-size: var(--font-size-larger);
