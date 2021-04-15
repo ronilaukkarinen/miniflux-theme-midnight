@@ -125,7 +125,7 @@
     font-family: 'Merriweather', serif;
     font-weight: 900;
     letter-spacing: 0;
-    transition: all .5s cubic-bezier(.19, 1, .22, 1), background-color .2s cubic-bezier(.19, 1, .22, 1);
+    transition: opacity .5s cubic-bezier(.19, 1, .22, 1), background-color .2s cubic-bezier(.19, 1, .22, 1);
   }
 
   a:hover,
@@ -184,7 +184,7 @@ body {
       font-size: var(--font-size-larger);
       opacity: .5;
       text-decoration: none;
-      transition: all .5s cubic-bezier(.19, 1, .22, 1), background-color .2s cubic-bezier(.19, 1, .22, 1);
+      transition: opacity .5s cubic-bezier(.19, 1, .22, 1), background-color .2s cubic-bezier(.19, 1, .22, 1);
     }
 
     a:hover,
@@ -303,7 +303,7 @@ body .item {
   }
 
   a {
-    transition: all .5s cubic-bezier(.19, 1, .22, 1), background-color .2s cubic-bezier(.19, 1, .22, 1);
+    transition: color .5s cubic-bezier(.19, 1, .22, 1), background-color .2s cubic-bezier(.19, 1, .22, 1);
   }
 
   a:hover,
@@ -319,7 +319,7 @@ body .item {
     clear: both;
     float: left;
     opacity: .7;
-    transition: all .5s cubic-bezier(.19, 1, .22, 1), background-color .2s cubic-bezier(.19, 1, .22, 1);
+    transition: opacity .5s cubic-bezier(.19, 1, .22, 1), background-color .2s cubic-bezier(.19, 1, .22, 1);
 
     &:hover,
     &:focus {
@@ -452,7 +452,7 @@ body .pagination-bottom {
     font-size: var(--font-size-larger);
     opacity: .5;
     text-decoration: none;
-    transition: all .5s cubic-bezier(.19, 1, .22, 1), background-color .2s cubic-bezier(.19, 1, .22, 1);
+    transition: opacity .5s cubic-bezier(.19, 1, .22, 1), background-color .2s cubic-bezier(.19, 1, .22, 1);
   }
 
   a:hover,
