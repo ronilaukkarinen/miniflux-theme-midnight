@@ -486,3 +486,11 @@ body .page-footer ul {
   line-height: 1.33;
   padding: 15px;
 }
+
+.feed-entries-counter {
+  font-size: var(--font-size-smaller);
+  margin-left: 5px;
+  opacity: .5;
+  position: relative;
+  top: 12px;
+}
