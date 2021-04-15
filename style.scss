@@ -102,7 +102,7 @@
   --entry-content-abbr-border-color: #777;
   --entry-enclosure-border-color: #333;
   --parsing-error-color: #eee;
-  --feed-parsing-error-background-color: #343434;
+  --feed-parsing-error-background-color: transparent;
   --keyboard-shortcuts-li-color: #9b9b9b;
   --counter-color: #bbb;
 
@@ -444,7 +444,7 @@ body .entry-header h1 {
 
 // Focus color
 a:focus {
-  outline: max(1px, .1em) dashed currentColor;
+  outline: max(.1em, .1em) dashed currentColor;
   outline-offset: .35em;
 }
 
@@ -539,4 +539,12 @@ textarea {
   border: 0;
   border-radius: 0;
   padding: 10px 20px;
+}
+
+article.feed-parsing-error {
+  border-color: transparent;
+}
+
+.parsing-error {
+  margin-top: 10px;
 }
