@@ -105,6 +105,10 @@
   --feed-parsing-error-background-color: #343434;
   --keyboard-shortcuts-li-color: #9b9b9b;
   --counter-color: #bbb;
+
+  @media (max-width: 600px) {
+    --item-padding: 15px;
+  }
 }
 
 // Logo
@@ -148,9 +152,12 @@ body {
   text-rendering: geometricPrecision;
 }
 
-main,
-.header {
-  padding: var(--item-padding);
+body main,
+body .header {
+  padding-bottom: var(--item-padding);
+  padding-left: var(--item-padding);
+  padding-right: var(--item-padding);
+  padding-top: var(--item-padding);
 }
 
 .header ul,
