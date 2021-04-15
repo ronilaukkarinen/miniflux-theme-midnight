@@ -153,6 +153,11 @@ main,
   padding: var(--item-padding);
 }
 
+.header ul,
+.header li {
+  list-style: none;
+}
+
 // Alerts
 .flash-message,
 .alert-success {
