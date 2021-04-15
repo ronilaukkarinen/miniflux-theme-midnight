@@ -62,9 +62,9 @@
   --alert-color: #efefef;
   --alert-background-color: transparent;
   --alert-border-color: transparent;
-  --alert-success-color: #efefef;
-  --alert-success-background-color: #333;
-  --alert-success-border-color: #888;
+  --alert-success-color: #2eb54d;
+  --alert-success-background-color: transparent;
+  --alert-success-border-color: transparent;
   --alert-error-color: #efefef;
   --alert-error-background-color: #333;
   --alert-error-border-color: #888;
@@ -150,6 +150,13 @@ body {
 
 // Main header
 .header {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+// Alerts
+.flash-message,
+.alert-success {
   padding-left: 5px;
   padding-right: 5px;
 }
