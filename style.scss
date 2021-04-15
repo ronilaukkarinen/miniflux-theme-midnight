@@ -461,12 +461,18 @@ body .pagination-bottom {
   }
 }
 
+// Lists
 .page-header li,
 .page-footer li {
   list-style: none;
 }
 
-// Code
+body .page-header ul,
+body .page-footer ul {
+  margin-left: 0;
+}
+
+// Code in blog posts
 .entry-content pre,
 .entry-content code {
   border-radius: 6px;
