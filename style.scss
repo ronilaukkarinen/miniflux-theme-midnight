@@ -316,6 +316,18 @@ body .item {
       border-color: #292a81;
       color: #5654e0;
     }
+
+    &[href="/category/9/entries"] {
+      background-color: #0d2328;
+      border-color: #296c81;
+      color: #54d4e0;
+    }
+
+    &[href="/category/10/entries"] {
+      background-color: #20280d;
+      border-color: #628129;
+      color: #b6e054;
+    }
   }
 }
 
