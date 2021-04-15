@@ -148,13 +148,8 @@ body {
   text-rendering: geometricPrecision;
 }
 
-// Main header
+main,
 .header {
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-main {
   padding: var(--item-padding);
 }
 
@@ -347,7 +342,7 @@ body .item {
 
 // Single article
 .entry {
-  padding: var(--item-padding);
+  padding: 0;
 }
 
 .entry-content {
