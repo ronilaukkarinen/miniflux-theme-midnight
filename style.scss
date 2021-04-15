@@ -48,17 +48,17 @@
   --table-th-color: var(--color-white);
   --table-tr-hover-background-color: #333;
   --table-tr-hover-color: var(--color-white);
-  --button-primary-border-color: #888;
-  --button-primary-background: #333;
-  --button-primary-color: #efefef;
+  --button-primary-border-color: transparent;
+  --button-primary-background: #000;
+  --button-primary-color: #fff;
   --button-primary-focus-border-color: #888;
   --button-primary-focus-background: #555;
-  --input-border: 1px solid #555;
-  --input-background: #333;
-  --input-color: #ccc;
-  --input-focus-color: #efefef;
+  --input-border: 0;
+  --input-background: #000;
+  --input-color: #fff;
+  --input-focus-color: #fff;
   --input-focus-border-color: rgba(82, 168, 236, .8);
-  --input-focus-box-shadow: 0 0 8px rgba(82, 168, 236, .6);
+  --input-focus-box-shadow: 0;
   --alert-color: #efefef;
   --alert-background-color: transparent;
   --alert-border-color: transparent;
@@ -215,12 +215,12 @@ main {
 }
 
 body .item {
-  padding-left: 0;
-  padding-right: 0;
   display: grid;
   margin-bottom: 20px;
   margin-top: 30px;
   overflow: visible;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 // Hide favicons
@@ -510,4 +510,25 @@ body .page-footer ul {
   opacity: .5;
   position: relative;
   top: 12px;
+}
+
+// Forms
+input[type="search"],
+input[type="url"],
+input[type="password"],
+input[type="text"],
+input[type="number"],
+select,
+textarea {
+  background-color: var(--input-background);
+  border: 0;
+  border-radius: 0;
+  color: var(--input-color);
+  padding: 10px;
+}
+
+.button-primary {
+  border: 0;
+  border-radius: 0;
+  padding: 10px 20px;
 }
