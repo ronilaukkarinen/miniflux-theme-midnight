@@ -431,6 +431,14 @@ body .entry-header h1 {
   }
 }
 
+// Mobile fixes
+.entry-header,
+body .entry-header h1 {
+  @media (max-width: 600px) {
+    margin-top: 0;
+  }
+}
+
 // Article heading hover
 .entry header h1 a:hover,
 .entry header h1 a:focus {
