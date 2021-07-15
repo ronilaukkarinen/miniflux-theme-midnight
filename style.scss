@@ -468,6 +468,21 @@ a:focus {
   outline-offset: .35em;
 }
 
+// Make focus a little more engaging
+// @source https://twitter.com/argyleink/status/1387072095159406596
+// @link https://codepen.io/argyleink/pen/JjEzeLp
+@media (prefers-reduced-motion: no-preference) {
+  .item.current-item,
+  .item,
+  :focus,
+  *:focus,
+  [data-whatinput="keyboard"] :focus,
+  [data-whatinput="keyboard"] a:focus {
+    outline-offset: 5px;
+    transition: outline-offset .25s ease;
+  }
+}
+
 // Pagination
 .pagination-top {
   display: none;
@@ -567,4 +582,24 @@ article.feed-parsing-error {
 
 .parsing-error {
   margin-top: 10px;
+}
+
+// Current item
+.item.current-item {
+  border: 1px dotted var(--item-border-color);
+  box-shadow: none;
+  display: grid;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  outline: max(.2em, .2em) dashed #3df57f;
+  outline-offset: 20px;
+  overflow: visible;
+  padding-bottom: var(--item-padding);
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: var(--item-padding);
+
+  *:focus {
+    outline: none;
+  }
 }
