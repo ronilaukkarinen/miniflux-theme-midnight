@@ -17,5 +17,5 @@ A dark Miniflux theme that aims to be the most readable and modern minimal Minif
 ## Development
 
 1. Run `npm install`
-2. Run `scss --style compressed style.scss > style.css`
-   or watch for changes: `scss --style compressed --watch style.scss:style.css`
+2. Run `npm start` to watch for changes
+  or `npm run dist` to prepare for commit
