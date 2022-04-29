@@ -3,10 +3,14 @@
   "version": "1.0.0",
   "description": "Midnight theme for Miniflux",
   "author": "Roni Laukkarinen (Twitter: @rolle, GitHub: ronilaukkarinen)",
-  "devDependencies": {
-    "scss": "^0.2.4"
+  "scripts": {
+    "start": "sass --style compressed --watch style.scss:style.css",
+    "dist": "npm run lint && npm run build",
+    "build": "sass --style compressed style.scss:style.css",
+    "lint": "stylelint style.scss"
   },
-  "dependencies": {
+  "devDependencies": {
+    "sass": "^1.51.0",
     "stylelint": "^13.12.0",
     "stylelint-a11y": "^1.2.3",
     "stylelint-config-recommended-scss": "^4.2.0",
@@ -14,6 +18,6 @@
     "stylelint-declaration-use-variable": "^1.7.2",
     "stylelint-order": "^4.1.0",
     "stylelint-scss": "^3.19.0",
-    "stylelint-value-no-unknown-custom-properties": "^3.0.0"
+    "stylelint-value-no-unknown-custom-properties": "^4.0.0"
   }
 }
