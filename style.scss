@@ -101,7 +101,6 @@
   --feed-parsing-error-background-color: transparent;
   --keyboard-shortcuts-li-color: #9b9b9b;
   --counter-color: #bbb;
-  --form-url-placeholder: #777;
 
   @media (max-width: 600px) {
     --item-title-link-font-size: 24px;
@@ -569,10 +568,6 @@ textarea {
   border-radius: 0;
   color: var(--input-color);
   padding: 10px;
-}
-
-#form-url{
-  color: var(--form-url-placeholder);
 }
 
 .button-primary {
